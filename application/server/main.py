@@ -6,6 +6,9 @@ from application.components import predict, read_imagefile
 from application.schema import Symptom
 from application.components.prediction import symptom_check
 
+app_desc = """<h2>Image Classification `predict/image`</h2>
+<br>by Hamza Khan & Daniyal Ahmed"""
+
 app = FastAPI(title='CLoud Project', description=app_desc)
 
 @app.get("/", include_in_schema=False)
